@@ -1,0 +1,43 @@
+{
+    "name": "pwagram",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node ./build/app.bundle.js",
+        "start:dev": "npm-run-all -p start:server build:dev",
+        "start:server": "nodemon ./build/app.bundle.js",
+        "build:dev": "webpack --progress --color",
+        "build:prod": "webpack --config webpack.prod.config.js --progress --color",
+        "heroku-postbuild": "webpack --config webpack.prod.config.js --progress --color"
+    },
+    "keywords": [],
+    "author": "Mayank Singla",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "latest",
+        "@babel/preset-env": "latest",
+        "babel-loader": "latest",
+        "nodemon": "latest",
+        "npm-run-all": "latest",
+        "terser-webpack-plugin": "latest",
+        "webpack": "latest",
+        "webpack-cli": "latest",
+        "webpack-node-externals": "latest"
+    },
+    "dependencies": {
+        "body-parser": "latest",
+        "core-js": "latest",
+        "express": "latest",
+        "mongoose": "latest",
+        "multer": "^1.4.2",
+        "normalize-path": "^3.0.0",
+        "regenerator-runtime": "latest",
+        "uuid": "^8.3.2",
+        "web-push": "^3.4.5"
+    },
+    "engines": {
+        "node": "14.17.3",
+        "npm": "7.20.0"
+    }
+}

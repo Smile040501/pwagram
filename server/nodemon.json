@@ -1,0 +1,11 @@
+{
+    "env": {
+        "DB_USER": "mayank",
+        "DB_PASSWORD": "cfsQd1ylHy4JMOji",
+        "DB_NAME": "pwagram",
+        "VAPID_PUBLIC_KEY": "BKTJopN7Tx0th5RylFIyz0rtwpQ2AeIoNl9vwMdPoXGqN9-D1cEijD0pcTnOxqblBBDTmILqrv6q0EKvBVfxOIs",
+        "VAPID_PRIVATE_KEY": "6oppI8zyJjy7fDRpY7hvc9OS2y3q4Ag7lmzOFSOKpJU",
+        "JWT_KEY": "~`!@#$%^&*()_+-={}[]:';,./<>?somesupersuperveryverylonglongthatwontgotleismysecretistobehappyalwaysandkeepsmiling~`!@#$%^&*()_+-={}[]:';,./<>?"
+    },
+    "watch": ["build/app.bundle.js"]
+}
